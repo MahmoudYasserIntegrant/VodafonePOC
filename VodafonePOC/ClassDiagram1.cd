@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VodafonePOC.EShop" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgAgA=</HashCode>
+      <FileName>Pages\EShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VodafonePOC.SearchResult" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAACAAAAAAAAAEggABASAAAAAIAARCAAAAAAAAQA=</HashCode>
+      <FileName>Pages\SearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VodafonePOC.StartPage" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAAACA=</HashCode>
+      <FileName>Pages\StartPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VodafonePOC.TestScenario" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAgJAAAABFgBAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Test\StartTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VodafonePOC.ReadExcel" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAAAJAAABCAAAIGQAAIAgAAAAABAAICAQACQgDAA=</HashCode>
+      <FileName>ReadExcel\ReadExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VodafonePOC.SetupTest">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIEABAACAAAACAAAAAAAAiABAAAgAAIAAAAAAAQAAA=</HashCode>
+      <FileName>Setup\SetupTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
