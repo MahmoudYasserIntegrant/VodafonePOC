@@ -29,9 +29,10 @@ namespace VodafonePOC
         /********* Page Getters ***********/
         public String GetCountLabelValue()
         {
-            Thread.Sleep(3000);
+            // Thread.Sleep(3000);
+            WaitForElementToBeVisible(By.CssSelector(reader.GetCountLabelLocator()));
             LabelCount = driver.FindElement(By.CssSelector(reader.GetCountLabelLocator())).Text;
-            
+
          return LabelCount;
         }
 

@@ -14,8 +14,7 @@ namespace VodafonePOC
 /// This class to initiate the test base, initialize the driver to launch the test, and tear down
 /// </summary>
     public class SetupTest
-    {
-       
+    {       
         /********* Variables ***********/
         protected IWebDriver driver;
         protected static ExtentReports extent;
@@ -23,6 +22,7 @@ namespace VodafonePOC
         protected static ExtentTest test;
         protected ReadExcel reader = new ReadExcel();
 
+         
 
 
         /********* Reporting ***********/
@@ -97,6 +97,22 @@ namespace VodafonePOC
             wait.Until(ExpectedConditions.ElementToBeClickable(e));
         }
 
+        /********* Take screenshot *****/
+        public void TakeScreenShout(string screenShotName, string browserName)
+        {
+         
+            Screenshot image = ((ITakesScreenshot)driver).GetScreenshot();
+         image.SaveAsFile(ReadExcel.GetCurrentPath() + "\\Screen Shots\\"+browserName+"\\"+screenShotName+".png");
+       
+        }
+
+        /********* Scrolling **********/
+        public void Scroll(int pixels, char direction)
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("window.scrollBy(0,"+direction+pixels+")", "");
+        }
+        
         /********* TearDown ***********/
 
         [TearDown]

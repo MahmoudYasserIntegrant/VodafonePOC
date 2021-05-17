@@ -24,7 +24,7 @@ namespace VodafonePOC
         public void Search(String searchQuery)
         {
             SearchBarLocator = By.XPath(reader.GetSearchLocator());
-            Thread.Sleep(TimeSpan.FromSeconds(4));
+            //Thread.Sleep(TimeSpan.FromSeconds(4));
             SearchBarElement = driver.FindElement(SearchBarLocator);
             SearchBarElement.SendKeys(searchQuery);
             SearchBarElement.SendKeys(Keys.Enter);

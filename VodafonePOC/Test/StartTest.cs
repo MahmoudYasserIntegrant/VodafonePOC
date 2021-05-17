@@ -52,6 +52,7 @@ namespace VodafonePOC
             test.Log(Status.Info, "Search query("+SearchQuery+") is sent to Search-bar input");
             result = new SearchResult(driver);
             ResultPageURL = reader.GetResultPageURL();
+            driver.Manage().Timeouts().ImplicitWait.TotalSeconds.Equals(50);           
             Assert.IsTrue(result.GetCurrentUrl().Contains(ResultPageURL));
             test.Log(Status.Info, "Verify the generic URL for Search Result page");
         }
@@ -59,7 +60,7 @@ namespace VodafonePOC
         [Test, Order(2)]
         public void VerifyResultCount()
         {
-            Thread.Sleep(TimeSpan.FromSeconds(4));
+           // Thread.Sleep(TimeSpan.FromSeconds(4));
             NoResultLocator = By.XPath(reader.GetNoResultLocator());
             if (result.NoResultExist(NoResultLocator))
             {
@@ -73,6 +74,10 @@ namespace VodafonePOC
                 test.Log(Status.Info, "Verify the count displayed in label("+labelCount+") equals the real count("+realCount+") of search result items");
 
             }
+            Scroll(700, '+');
+            TakeScreenShout("before sorting 1",browser);
+            Scroll(700, '+');
+            TakeScreenShout("before sorting 2",browser);
         }
       
         [Test, Order(3)]
@@ -107,6 +112,11 @@ namespace VodafonePOC
             test.Log(Status.Info, "Sorted list of price is fetched from web app");
             Assert.True(sortedFromTest.SequenceEqual(tempSortedList));
             test.Log(Status.Info, "Verify that Items are sorted");
+
+            Scroll(700, '+');
+            TakeScreenShout("AfterSorting1",browser);
+            Scroll(700, '+');
+            TakeScreenShout("AfterSorting 2",browser);
 
         }
     }
