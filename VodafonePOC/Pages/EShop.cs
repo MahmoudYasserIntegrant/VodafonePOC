@@ -10,8 +10,11 @@ namespace VodafonePOC
     class EShop : SetupTest
     {
         /********* Variables ***********/
-        By SearchBarLocator;
-        IWebElement SearchBarElement;
+        By searchBarLocator;
+        By rejectCookiesLocator;
+        IWebElement searchBarElement;
+        IWebElement rejectCookies;
+
 
         /********* Constructor ***********/
         public EShop(IWebDriver driver)
@@ -23,11 +26,18 @@ namespace VodafonePOC
         [Obsolete]
         public void Search(String searchQuery)
         {
-            SearchBarLocator = By.XPath(reader.GetSearchLocator());
+            searchBarLocator = By.XPath(reader.GetSearchLocator());
             //Thread.Sleep(TimeSpan.FromSeconds(4));
-            SearchBarElement = driver.FindElement(SearchBarLocator);
-            SearchBarElement.SendKeys(searchQuery);
-            SearchBarElement.SendKeys(Keys.Enter);
+            searchBarElement = driver.FindElement(searchBarLocator);
+            searchBarElement.SendKeys(searchQuery);
+            searchBarElement.SendKeys(Keys.Enter);
+        }
+
+        public void RejectCookies()
+        {
+            rejectCookiesLocator = By.XPath(reader.GetRejectCookies());
+            Thread.Sleep(TimeSpan.FromSeconds(4));
+            rejectCookies.Click();
         }
 
     }
