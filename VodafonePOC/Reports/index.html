@@ -53,7 +53,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">1/14/2021 8:12:51 AM</span>
+                    <span class="badge badge-primary">11/2/2024 6:33:03 PM</span>
                 </a>
             </li>
         </ul>
@@ -108,7 +108,7 @@
 											<i class="fa fa-exclamation-circle"></i>
 										</a>
 										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+											<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																																																							<div class="dropdown-divider"></div>
 											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 										</ul>
 									</li>
@@ -116,25 +116,25 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
+										<li class="test-item" status="fail" author="" device="" tag=""> 
+											<div class="status-avatar fail-bg">
+												<i class="fa fa-times text-white"></i>
 											</div>
 											<div class="open-test">
 												<div class="test-detail"> 
 													<p class="name">Test searching and sorting</p> 
-													<p class="duration text-sm">0h:0m:17s+895ms</p> 
-													<span class="datetime">08:12:32 AM</span>
+													<p class="duration text-sm">0h:0m:9s+312ms</p> 
+													<span class="datetime">18:33:03 PM</span>
 												</div>
 											</div>
 											<div class="test-contents d-none">
 												<div class="detail-head">
 													<div class="p-v-10 d-inline-block">	
 														<div class="info">
-															<h5 class="test-status text-pass">Test searching and sorting</h5>
-															<span class='badge badge-success'>1/14/2021 8:12:32 AM</span>
-															<span class='badge badge-danger'>1/14/2021 8:12:50 AM</span>
-															<span class='badge badge-default'>0h:0m:17s+895ms</span>
+															<h5 class="test-status text-fail">Test searching and sorting</h5>
+															<span class='badge badge-success'>11/2/2024 6:33:03 PM</span>
+															<span class='badge badge-danger'>11/2/2024 6:33:12 PM</span>
+															<span class='badge badge-default'>0h:0m:9s+312ms</span>
 														</div>
 																												<div class="m-t-10 m-l-5">
 															This test contains 3 test cases 1)Launching Vodafone website and assert its URL  2)Navigate to Eshop page and search for a query(Data Driven) then assert that items count 3)Sort items by price and assert the sorting
@@ -152,211 +152,39 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:37</td>
+				<td>18:33:05</td>
 				<td>
 Chrome Browser launched successfully									</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:39</td>
+				<td>18:33:08</td>
 				<td>
 Navigated to Vodafone Website									</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:42</td>
+				<td>18:33:12</td>
 				<td>
 Navigated to Eshop page									</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:47</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>18:33:12</td>
 				<td>
-Search query(iphone) is sent to Search-bar input									</td>
+FailedSystem.NullReferenceException : Object reference not set to an instance of an object.									</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:47</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>18:33:12</td>
 				<td>
-Verify the generic URL for Search Result page									</td>
+FailedSystem.NullReferenceException : Object reference not set to an instance of an object.									</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:12:47</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>18:33:12</td>
 				<td>
-Passed									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:48</td>
-				<td>
-Verify the count displayed in label(12) equals the real count(12) of search result items									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:12:48</td>
-				<td>
-Passed									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:49</td>
-				<td>
-List of prices is fetched									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:49</td>
-				<td>
-Sort Prices Ascending									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:49</td>
-				<td>
-Sort items by Price in the web app									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:49</td>
-				<td>
-Sorted list of price is fetched from web app									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:49</td>
-				<td>
-Verify that Items are sorted									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:12:50</td>
-				<td>
-Passed									</td>
-			</tr>
-	</tbody>
-</table>
-
-</div>    
-											</div>
-										</li>
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
-											</div>
-											<div class="open-test">
-												<div class="test-detail"> 
-													<p class="name">Test searching and sorting</p> 
-													<p class="duration text-sm">0h:0m:14s+942ms</p> 
-													<span class="datetime">08:12:51 AM</span>
-												</div>
-											</div>
-											<div class="test-contents d-none">
-												<div class="detail-head">
-													<div class="p-v-10 d-inline-block">	
-														<div class="info">
-															<h5 class="test-status text-pass">Test searching and sorting</h5>
-															<span class='badge badge-success'>1/14/2021 8:12:51 AM</span>
-															<span class='badge badge-danger'>1/14/2021 8:13:06 AM</span>
-															<span class='badge badge-default'>0h:0m:14s+942ms</span>
-														</div>
-																												<div class="m-t-10 m-l-5">
-															This test contains 3 test cases 1)Launching Vodafone website and assert its URL  2)Navigate to Eshop page and search for a query(Data Driven) then assert that items count 3)Sort items by price and assert the sorting
-														</div>
-													</div>
-												</div>
-<div class="detail-body mt-4">												
-	
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:56</td>
-				<td>
-Firefox Browser launched successfully									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:12:59</td>
-				<td>
-Navigated to Vodafone Website									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:03</td>
-				<td>
-Navigated to Eshop page									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:03</td>
-				<td>
-Search query(iphone) is sent to Search-bar input									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:04</td>
-				<td>
-Verify the generic URL for Search Result page									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:13:04</td>
-				<td>
-Passed									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:05</td>
-				<td>
-Verify the count displayed in label(12) equals the real count(12) of search result items									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:13:06</td>
-				<td>
-Passed									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:06</td>
-				<td>
-List of prices is fetched									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:06</td>
-				<td>
-Sort Prices Ascending									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:06</td>
-				<td>
-Sort items by Price in the web app									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:06</td>
-				<td>
-Sorted list of price is fetched from web app									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-info text-info"></i></td>
-				<td>08:13:06</td>
-				<td>
-Verify that Items are sorted									</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>08:13:06</td>
-				<td>
-Passed									</td>
+FailedSystem.NullReferenceException : Object reference not set to an instance of an object.									</td>
 			</tr>
 	</tbody>
 </table>

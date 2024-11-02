@@ -29,10 +29,10 @@ namespace VodafonePOC
         public void ReadData()
         {
             app = new excel.Application();
-            workBook = app.Workbooks.Open(GetCurrentPath()+ "\\ReadExcel\\TestData");
+            workBook = app.Workbooks.Open(GetCurrentPath()+ "\\ReadExcel\\Copy of TestData");
             workSheet = workBook.Sheets[1];
             range = workSheet.UsedRange;
-            Data = new string[12];
+            Data = new string[13];
             for (int i = 1; i < Data.Length; i++)
             {
                 Data[i] = (string)(WorkSheet.Cells[i, 2] as Range).Value;
@@ -84,6 +84,10 @@ namespace VodafonePOC
         public String GetSortingOrder()
         {
             return Data[11];
+        }
+        public String GetRejectCookies()
+        {
+            return Data[12];
         }
 
         /********* Getters ***********/
