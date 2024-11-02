@@ -47,7 +47,6 @@ namespace VodafonePOC
             start.NavigateToEshop();
             test.Log(Status.Info, "Navigated to Eshop page");
             shop = new EShop(driver);
-            shop.RejectCookies();
             SearchQuery = reader.GetSearchQuery();
             shop.Search(SearchQuery);
             test.Log(Status.Info, "Search query("+SearchQuery+") is sent to Search-bar input");
